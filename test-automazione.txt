@@ -1,0 +1,24 @@
+TEST TECNICO AUTOMAZIONE — 2026-11-18 (sessione cloud programmata)
+Nessun contenuto pubblicato su Instagram.
+
+1) Windsor.ai for Social Media — get_connectors
+   - Connettore instagram: PRESENTE
+   - Account 17841456358250108 (nome "ripetialpoliba"): PRESENTE
+   - Azioni elencate: create_carousel_post, create_comment, create_image_post,
+     create_story, create_video_post, delete_comment, hide_comment,
+     reply_to_comment, unhide_comment
+   - Opzioni di lettura: media_relationship
+
+2) piano.json (https://eliciogiuseppe.github.io/ripetialpoliba-social/piano.json)
+   - Letto via WebFetch: chiavi principali nota, base_url, windsor, giorni
+   - Giorni contenuti: 4
+       2026-11-19  C1 · Carosello di lancio
+       2026-11-20  C2 · Diventa tutor
+       2026-11-21  C3 · Metodo Poli, 5 errori
+       2026-11-22  C4 · Reel I 5 stadi
+   - Nota: curl verso eliciogiuseppe.github.io dalla shell è bloccato dal proxy
+     (403 CONNECT). Il piano.json nel repo (main @ 8950648) conferma 4 giorni.
+
+3) Strumenti locali
+   - which google-chrome ffmpeg -> /usr/bin/google-chrome, /usr/local/bin/ffmpeg (exit 0)
+   - python3 -c "import playwright, numpy, scipy, PIL; print('ok')" -> ok (exit 0)
