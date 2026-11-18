@@ -1,0 +1,83 @@
+{
+ "nota": "Piano di pubblicazione di @ripetialpoliba. Ogni giorno alle 12:00 (Europe/Rome): prima il post, poi le stories in ordine. URL dei file = base_url + percorso.",
+ "base_url": "https://eliciogiuseppe.github.io/ripetialpoliba-social/",
+ "windsor": {
+  "connettore": "instagram",
+  "account": "17841456358250108"
+ },
+ "giorni": [
+  {
+   "data": "2026-11-19",
+   "post": {
+    "tipo": "carosello",
+    "titolo": "C1 · Carosello di lancio",
+    "immagini": [
+     "2026-11/c1-1.jpg",
+     "2026-11/c1-2.jpg",
+     "2026-11/c1-3.jpg",
+     "2026-11/c1-4.jpg",
+     "2026-11/c1-5.jpg",
+     "2026-11/c1-6.jpg"
+    ],
+    "caption": "Chi l'ha già passato te lo spiega. 🎓\n\nRipeti al Poliba nasce per una cosa sola: aiutarti a superare gli esami del Poliba con lezioni tenute da studenti che quegli esami li hanno già superati.\n\n→ Scegli la materia\n→ Scegli giorno e orario\n→ Conferma con la tua email\n\nOnline o in presenza, con pagamento in contanti. Se cambi programma, sposti la lezione dalla tua area personale.\n\nPrenota dal link in bio 👆\n\n#poliba #politecnicodibari #ripetizioni #ingegneria #studentibari"
+   },
+   "stories": [
+    "2026-11/g1-story-1.mp4",
+    "2026-11/g1-story-2.mp4",
+    "2026-11/g1-story-3.mp4"
+   ]
+  },
+  {
+   "data": "2026-11-20",
+   "post": {
+    "tipo": "foto",
+    "titolo": "C2 · Diventa tutor",
+    "immagine": "2026-11/c2.jpg",
+    "caption": "Hai preso un bel voto in Analisi, Fisica o Scienza delle costruzioni? Quella fatica può diventare un'entrata.\n\nSu Ripeti al Poliba diventi tutor gratis:\n✔️ proponi le materie che conosci\n✔️ scegli i tuoi orari\n✔️ lezioni online o in presenza, decidi tu dove\n✔️ gli studenti ti trovano e prenotano dalla piattaforma\n\nOgni profilo viene approvato prima di andare online.\n\nCandidati da ripetialpoliba.it → «Registrati come Tutor» (link in bio).\n\nConosci qualcuno che spiega meglio dei libri? Taggalo qui sotto 👇\n\n#poliba #politecnicodibari #tutor #lavoroperstudenti #ingegneria"
+   },
+   "stories": [
+    "2026-11/g2-story-1.mp4",
+    "2026-11/g2-story-2.mp4",
+    "2026-11/g2-story-3.mp4"
+   ]
+  },
+  {
+   "data": "2026-11-21",
+   "post": {
+    "tipo": "carosello",
+    "titolo": "C3 · Metodo Poli, 5 errori",
+    "immagini": [
+     "2026-11/c3-1.jpg",
+     "2026-11/c3-2.jpg",
+     "2026-11/c3-3.jpg",
+     "2026-11/c3-4.jpg",
+     "2026-11/c3-5.jpg",
+     "2026-11/c3-6.jpg",
+     "2026-11/c3-7.jpg"
+    ],
+    "caption": "Il terzo lo facciamo quasi tutti. Tu in quale ti riconosci? 👀\n\n5 errori che allungano la sessione (e cosa fare invece):\n1. Rileggere invece di ripetere a memoria\n2. Guardare subito la soluzione\n3. Ridursi agli ultimi giorni\n4. Non provare mai una simulazione d'esame\n5. Restare bloccati da soli per giorni\n\nSalva il post e riprendilo quando inizi a preparare il prossimo appello.\n\nE se un esame proprio non torna, su Ripeti al Poliba trovi un tutor che l'ha già passato. Link in bio.\n\n#poliba #politecnicodibari #metododistudio #sessioneesami #universitàbari #studiare"
+   },
+   "stories": [
+    "2026-11/g3-story-1.mp4",
+    "2026-11/g3-story-2.mp4",
+    "2026-11/g3-story-3.mp4"
+   ]
+  },
+  {
+   "data": "2026-11-22",
+   "post": {
+    "tipo": "reel",
+    "titolo": "C4 · Reel I 5 stadi",
+    "video": "2026-11/c4-reel.mp4",
+    "copertina": "2026-11/c4-cover.jpg",
+    "share_to_feed": true,
+    "caption": "Allo stadio 4 ci siamo arrivati tutti. 😅\nTu a che stadio sei? Scrivilo nei commenti.\n\nConsiglio da collega: non aspettare il −2. Prenota prima su ripetialpoliba.it (link in bio).\n\n#poliba #politecnicodibari #sessioneesami #vitadauniversitario #ingegneria"
+   },
+   "stories": [
+    "2026-11/g4-story-1.mp4",
+    "2026-11/g4-story-2.mp4",
+    "2026-11/g4-story-3.mp4"
+   ]
+  }
+ ]
+}

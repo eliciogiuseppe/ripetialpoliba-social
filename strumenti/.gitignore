@@ -1,0 +1,5 @@
+html/*.html
+png/*.png
+png/*.mp4
+musica/lofi.wav
+__pycache__/
