@@ -27,14 +27,18 @@ Procedura seguita ogni giorno dall'attività programmata delle 12:00 (Europe/Rom
 - Il link in bio è impostato: nelle caption si può scrivere "link in bio".
 
 ## Pubblicare il giorno X
-1. Leggi `piano.json` (https://eliciogiuseppe.github.io/ripetialpoliba-social/piano.json) e prendi la voce con `data` = oggi.
-2. Con Windsor.ai (connettore `instagram`, account `17841456358250108`) controlla i media pubblicati oggi, così non pubblichi due volte.
-3. Pubblica il post:
-   - `carosello` → `create_carousel_post` (`image_urls`, `caption`);
-   - `foto` → `create_image_post`;
-   - `reel` → `create_video_post` (`video_url`, `cover_url`, `share_to_feed`).
-4. Pubblica le stories in ordine con `create_story` (`video_url`).
-5. Tutti gli URL sono `base_url` + il percorso indicato in `piano.json`.
+Ogni giorno lavorano due attività programmate (Europe/Rome):
+- **11:57 · post + storia del post.**
+  1. Leggi `piano.json` (https://eliciogiuseppe.github.io/ripetialpoliba-social/piano.json) e prendi la voce con `data` = oggi.
+  2. Con Windsor.ai (connettore `instagram`, account `17841456358250108`) controlla i media pubblicati oggi, così non pubblichi due volte.
+  3. Pubblica il post:
+     - `carosello` → `create_carousel_post` (`image_urls`, `caption`);
+     - `foto` → `create_image_post`;
+     - `reel` → `create_video_post` (`video_url`, `cover_url`, `share_to_feed`).
+  4. **Subito dopo** pubblica `storia_post` con `create_story` (`video_url`). È la story che rilancia il post appena uscito: copertina del post, etichetta "Nuovo post" o "Nuovo Reel", "Lo trovi sul profilo".
+- **13:17 · le 3 stories del giorno**, in ordine, con `create_story` (`video_url`). Prima controlla con Windsor quante stories sono già uscite oggi, così non le ripubblichi.
+
+Tutti gli URL sono `base_url` + il percorso indicato in `piano.json`.
 
 ## Produrre nuovi contenuti
 1. Le idee sono nel calendario editoriale: https://claude.ai/artifact/EsXwqCFHaZyTdaYXAMj5nH. Ogni giorno ha un post o Reel alle 12:00 e una riga di stories.
@@ -43,6 +47,7 @@ Procedura seguita ogni giorno dall'attività programmata delle 12:00 (Europe/Rom
    - stile e marchio "Tocco" come in `build_posts.py` e `build_stories_*.py`.
 3. Controlla ogni immagine a vista prima di pubblicarla: testo leggibile, niente testo tagliato.
 4. Story in video: `sh strumenti/storia_video.sh input.png output.mp4 OFFSET`. Usa offset diversi, tra 0 e 57 secondi.
+   Storia del post: `python3 strumenti/storia_post.py COPERTINA.jpg AAAA-MM/gN-post.mp4 OFFSET "Nuovo post"` (per i Reel usa "Nuovo Reel" e la copertina del Reel). Va nel campo `storia_post` della voce del giorno.
 5. Reel: video 1080×1920 con la musica di `strumenti/musica/lofi-norm.flac`, mixata con `ffmpeg`.
 6. Metti i file in `AAAA-MM/`, aggiungi le voci in `piano.json`, poi commit e push su `main`. Verifica che gli URL su GitHub Pages rispondano 200.
 7. Tieni `piano.json` sempre avanti di almeno 3 giorni.

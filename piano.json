@@ -1,5 +1,5 @@
 {
- "nota": "Piano di pubblicazione di @ripetialpoliba. Ogni giorno alle 12:00 (Europe/Rome): prima il post, poi le stories in ordine. URL dei file = base_url + percorso.",
+ "nota": "Piano di pubblicazione di @ripetialpoliba. Ogni giorno: alle 12:00 il post, subito dopo la 'storia_post' (story che rilancia il post), poi verso le 13:20 le 3 stories in ordine. URL dei file = base_url + percorso.",
  "base_url": "https://eliciogiuseppe.github.io/ripetialpoliba-social/",
  "windsor": {
   "connettore": "instagram",
@@ -39,7 +39,8 @@
     "2026-11/g2-story-1.mp4",
     "2026-11/g2-story-2.mp4",
     "2026-11/g2-story-3.mp4"
-   ]
+   ],
+   "storia_post": "2026-11/g2-post.mp4"
   },
   {
    "data": "2026-11-21",
@@ -61,7 +62,8 @@
     "2026-11/g3-story-1.mp4",
     "2026-11/g3-story-2.mp4",
     "2026-11/g3-story-3.mp4"
-   ]
+   ],
+   "storia_post": "2026-11/g3-post.mp4"
   },
   {
    "data": "2026-11-22",
@@ -77,7 +79,13 @@
     "2026-11/g4-story-1.mp4",
     "2026-11/g4-story-2.mp4",
     "2026-11/g4-story-3.mp4"
-   ]
+   ],
+   "storia_post": "2026-11/g4-post.mp4"
   }
- ]
+ ],
+ "orari": {
+  "post": "12:00",
+  "storia_post": "subito dopo il post",
+  "stories": "circa 13:20 (1 ora e 20 dopo il post)"
+ }
 }
