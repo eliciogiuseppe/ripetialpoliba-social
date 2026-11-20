@@ -25,11 +25,12 @@ Procedura seguita ogni giorno dall'attività programmata delle 12:00 (Europe/Rom
   - materie: Analisi 1, Analisi 2, Fisica 1, Fisica 2, Informatica per l'ingegneria, Scienza delle costruzioni, SEIMAFI;
   - su richiesta: simulazioni d'esame, revisione tesi, laboratori pratici.
 - Il link in bio è impostato: nelle caption si può scrivere "link in bio".
+- Niente richieste di autorizzazione (20/11/2026): le attività usano solo git, la shell, Windsor.ai, gli strumenti GitHub e Claude Docs. Non usano WebFetch, il browser o add_repo e non aprono gli URL di github.io, che da qui non sono raggiungibili.
 
 ## Pubblicare il giorno X
 Ogni giorno lavorano due attività programmate (Europe/Rome):
 - **11:57 · post + storia del post.**
-  1. Leggi `piano.json` (https://eliciogiuseppe.github.io/ripetialpoliba-social/piano.json) e prendi la voce con `data` = oggi.
+  1. Leggi `piano.json` dal repository (git pull o git clone) e prendi la voce con `data` = oggi.
   2. Con Windsor.ai (connettore `instagram`, account `17841456358250108`) controlla i media pubblicati oggi, così non pubblichi due volte.
   3. Pubblica il post:
      - `carosello` → `create_carousel_post` (`image_urls`, `caption`);
@@ -49,6 +50,6 @@ Tutti gli URL sono `base_url` + il percorso indicato in `piano.json`.
 4. Story in video: `sh strumenti/storia_video.sh input.png output.mp4 OFFSET`. Usa offset diversi, tra 0 e 57 secondi.
    Storia del post: `python3 strumenti/storia_post.py COPERTINA.jpg AAAA-MM/gN-post.mp4 OFFSET "Nuovo post"` (per i Reel usa "Nuovo Reel" e la copertina del Reel). Va nel campo `storia_post` della voce del giorno.
 5. Reel: video 1080×1920 con la musica di `strumenti/musica/lofi-norm.flac`, mixata con `ffmpeg`.
-6. Metti i file in `AAAA-MM/`, aggiungi le voci in `piano.json`, poi commit e push su `main`. Verifica che gli URL su GitHub Pages rispondano 200.
+6. Metti i file in `AAAA-MM/`, aggiungi le voci in `piano.json`, poi commit e push su `main`. Verifica con gli strumenti GitHub che la run «pages build and deployment» del commit sia `success`: è questa la verifica degli URL.
 7. Tieni `piano.json` sempre avanti di almeno 3 giorni.
 8. Aggiorna lo stato nel calendario: PROGRAMMATO, poi PUBBLICATO con il link.
